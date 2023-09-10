@@ -3,7 +3,7 @@ import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: " http://localhost:8080/zh",
 
   author: {
     name: "Mr.Hope",
@@ -57,7 +57,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
+      "/en/demo/encrypt.html": ["1234"],
       "/zh/demo/encrypt.html": ["1234"],
     },
   },

@@ -14,6 +14,9 @@ devDependencies:
   vuepress:
     specifier: 2.0.0-beta.67
     version: 2.0.0-beta.67(@vuepress/client@2.0.0-beta.67)(vue@3.3.4)
+  vuepress-plugin-redirect:
+    specifier: 2.0.0-beta.237
+    version: 2.0.0-beta.237(vuepress@2.0.0-beta.67)
   vuepress-theme-hope:
     specifier: 2.0.0-beta.237
     version: 2.0.0-beta.237(vuepress@2.0.0-beta.67)
@@ -5990,6 +5993,42 @@ packages:
       '@vuepress/client': 2.0.0-beta.67
       vue: 3.3.4
       vuepress: 2.0.0-beta.67(@vuepress/client@2.0.0-beta.67)(vue@3.3.4)
+      vuepress-shared: 2.0.0-beta.237(vuepress@2.0.0-beta.67)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - supports-color
+    dev: true
+
+  /vuepress-plugin-redirect@2.0.0-beta.237(vuepress@2.0.0-beta.67):
+    resolution: {integrity: sha512-ENPTHiAGdZjaSanTu0MpZ/oWlkbZD3JBxV7mADiTraKwwzga3rgzDpKA19yEc3ti6WdIk8fc4kW9zak9HEPIhw==}
+    engines: {node: '>=16.19.0', npm: '>=8', pnpm: '>=7'}
+    hasBin: true
+    peerDependencies:
+      sass-loader: ^13.3.2
+      vuepress: 2.0.0-beta.67
+      vuepress-vite: 2.0.0-beta.67
+      vuepress-webpack: 2.0.0-beta.67
+    peerDependenciesMeta:
+      sass-loader:
+        optional: true
+      vuepress:
+        optional: true
+      vuepress-vite:
+        optional: true
+      vuepress-webpack:
+        optional: true
+    dependencies:
+      '@vuepress/cli': 2.0.0-beta.67
+      '@vuepress/client': 2.0.0-beta.67
+      '@vuepress/core': 2.0.0-beta.67
+      '@vuepress/shared': 2.0.0-beta.67
+      '@vuepress/utils': 2.0.0-beta.67
+      '@vueuse/core': 10.4.1(vue@3.3.4)
+      cac: 6.7.14
+      vue: 3.3.4
+      vue-router: 4.2.4(vue@3.3.4)
+      vuepress: 2.0.0-beta.67(@vuepress/client@2.0.0-beta.67)(vue@3.3.4)
+      vuepress-plugin-sass-palette: 2.0.0-beta.237(vuepress@2.0.0-beta.67)
       vuepress-shared: 2.0.0-beta.237(vuepress@2.0.0-beta.67)
     transitivePeerDependencies:
       - '@vue/composition-api'

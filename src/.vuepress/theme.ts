@@ -1,10 +1,10 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { enNavbar, zhNavbar } from "./navbar";
+import { enSidebar, zhSidebar } from "./sidebar";
 
+// @ts-ignore
 export default hopeTheme({
-  hostname: " http://localhost:8080/zh",
-
+  hostname: "http://localhost:8080/zh",
   author: {
     name: "Mr.Hope",
     url: "https://mister-hope.com",
@@ -169,5 +169,5 @@ export default hopeTheme({
     //     ],
     //   },
     // },
-  },
+  }
 });

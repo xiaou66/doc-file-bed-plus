@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
+import {redirectPlugin} from "vuepress-plugin-redirect";
 
 export default defineUserConfig({
   base: "/",
@@ -16,6 +17,12 @@ export default defineUserConfig({
     },
   },
 
+  plugins: [
+    redirectPlugin({
+      autoLocale: true,
+      defaultLocale: 'zh'
+    }),
+  ],
   theme,
 
   // Enable it with pwa

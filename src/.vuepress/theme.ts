@@ -1,6 +1,6 @@
-import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar";
-import { enSidebar, zhSidebar } from "./sidebar";
+import {hopeTheme} from "vuepress-theme-hope";
+import {enNavbar, zhNavbar} from "./navbar";
+import {enSidebar, zhSidebar} from "./sidebar";
 
 // @ts-ignore
 export default hopeTheme({
@@ -96,11 +96,11 @@ export default hopeTheme({
       stylize: [
         {
           matcher: "Recommended",
-          replacer: ({ tag }) => {
+          replacer: ({tag}) => {
             if (tag === "em")
               return {
                 tag: "Badge",
-                attrs: { type: "tip" },
+                attrs: {type: "tip"},
                 content: "Recommended",
               };
           },
@@ -112,7 +112,6 @@ export default hopeTheme({
       vPre: true,
       vuePlayground: true,
     },
-
     // uncomment these if you want a pwa
     // pwa: {
     //   favicon: "/favicon.ico",
@@ -170,4 +169,4 @@ export default hopeTheme({
     //   },
     // },
   }
-});
+}, { custom: true });

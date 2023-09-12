@@ -1,20 +1,19 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import {redirectPlugin} from "vuepress-plugin-redirect";
+import { path, getDirname } from "@vuepress/utils";
 
+// @ts-ignore
+const __dirname = getDirname(import.meta.url)
 export default defineUserConfig({
   base: "/",
   locales: {
     "/zh/": {
       lang: "zh-CN",
-      title: "文档演示",
-      description: "vuepress-theme-hope 的文档演示",
     },
-    "/en/": {
+    /*"/en/": {
       lang: "en-US",
-      title: "Docs Demo",
-      description: "A docs demo for vuepress-theme-hope",
-    },
+    },*/
   },
 
   plugins: [
@@ -23,6 +22,12 @@ export default defineUserConfig({
       defaultLocale: 'zh'
     }),
   ],
+  alias: {
+    "@theme-hope/components/HomePage": path.resolve(
+      __dirname,
+      "./components/HomePage.vue",
+    ),
+  },
   theme,
 
   // Enable it with pwa

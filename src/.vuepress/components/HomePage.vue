@@ -45,12 +45,17 @@
        </div>
      </template>
      <template #center>
-       <div>
-         <div>同步</div>
+       <div class="center-1">
+         <div>
+           <div>
+             <div>安全</div>
+           </div>
+         </div>
+         <div>222s</div>
        </div>
      </template>
      <template #bottom>
-       <div>111</div>
+       <div></div>
      </template>
    </HopeHomePage>
 </template>
@@ -59,8 +64,8 @@ import HopeHomePage from "vuepress-theme-hope/components/HomePage.js";
 </script>
 <style lang="scss" scoped>
 .main-title {
-  padding-top: 60px;
-  margin-bottom: 20px;
+  padding-bottom: 30px;
+  margin-top: 90px;
   #title {
     font-size: 24px;
     font-weight: 700;
@@ -103,13 +108,19 @@ import HopeHomePage from "vuepress-theme-hope/components/HomePage.js";
 }
 .video {
   margin-left: 50px;
-  margin-top: 30px;
+  margin-top: 60px;
   border-radius: 10px;
   overflow: hidden;
   iframe {
     width: 500px;
     height: 300px;
   }
+}
+.center-1 {
+  height: calc(100vh - 440px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 html[data-theme=dark] {
   .top-background {
@@ -134,6 +145,9 @@ html {
     .utools {
       background: linear-gradient(135deg,#232526,#414345);
     }
+  }
+  .center-1 {
+    background: #ffffff;
   }
 }
 </style>

@@ -46,12 +46,11 @@
      </template>
      <template #center>
        <div class="center-1">
-         <div>
+         <div class="main-image">
            <div>
-             <div>安全</div>
+             <img src="https://images.pexels.com/photos/904111/pexels-photo-904111.jpeg">
            </div>
          </div>
-         <div>222s</div>
        </div>
      </template>
      <template #bottom>
@@ -117,14 +116,36 @@ import HopeHomePage from "vuepress-theme-hope/components/HomePage.js";
   }
 }
 .center-1 {
-  height: calc(100vh - 440px);
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
 }
 html[data-theme=dark] {
   .top-background {
     background: #efefef;
+  }
+}
+.main-image {
+  width: 66%;
+  min-width: 376px;
+  box-sizing: border-box;
+  height: auto;
+  padding: 20px;
+  >div {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 10px;
+    overflow: hidden;
   }
 }
 html {

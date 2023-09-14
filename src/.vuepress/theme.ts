@@ -29,7 +29,8 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: "",
+      copyright: `Copyright © 2023-${new Date().getFullYear()} Mr.xiaou`,
 
       displayFooter: true,
 
@@ -45,9 +46,9 @@ export default hopeTheme({
       // sidebar
       sidebar: enSidebar,
 
-      footer: "Default footer",
+      footer: "",
 
-      displayFooter: true,
+      displayFooter: false,
 
       metaLocales: {
         editLink: "Edit this page on GitHub",

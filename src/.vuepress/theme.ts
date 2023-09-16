@@ -5,23 +5,19 @@ import {enSidebar, zhSidebar} from "./sidebar";
 // @ts-ignore
 export default hopeTheme({
   hostname: "http://localhost:8080/zh",
-  author: {
-    name: "Mr.xiaou",
-    // url: "https://mister-hope.com",
-  },
-
-  iconAssets: [
-    'fontawesome-with-brands',
-  ],
+  iconAssets: ['fontawesome-with-brands'],
   breadcrumbIcon: true,
+  navTitle: '文件床 PLUS',
   logo: "/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
-
+  repo: "xiaou66/doc-file-bed-plus",
   docsDir: "src",
 
   headerDepth: 1,
   print: false,
+  contributors: true,
+  lastUpdated: true,
+  fullscreen: true,
 
   locales: {
     /**
@@ -41,7 +37,7 @@ export default hopeTheme({
 
       // page meta
       metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
+        editLink: "编辑此页",
       },
     },
     "/en/": {

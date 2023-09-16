@@ -1,5 +1,4 @@
 ---
 title: 指南
-icon: lightbulb
-d: 111
+icon: fa-solid fa-compass
 ---

@@ -6,17 +6,22 @@ import {enSidebar, zhSidebar} from "./sidebar";
 export default hopeTheme({
   hostname: "http://localhost:8080/zh",
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "Mr.xiaou",
+    // url: "https://mister-hope.com",
   },
 
-  iconAssets: "fontawesome-with-brands",
-
+  iconAssets: [
+    'fontawesome-with-brands',
+  ],
+  breadcrumbIcon: true,
   logo: "/logo.svg",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
   docsDir: "src",
+
+  headerDepth: 1,
+  print: false,
 
   locales: {
     /**
@@ -64,15 +69,15 @@ export default hopeTheme({
   },
 
   plugins: {
-    // You should generate and use your own comment service
-    comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-    },
-
+    // 评论
+    // // You should generate and use your own comment service
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // },
     // All features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,

@@ -27,6 +27,10 @@ export default defineUserConfig({
       __dirname,
       "./components/HomePage.vue",
     ),
+    "@theme-hope/components/BreadCrumb": path.resolve(
+      __dirname,
+      "./components/NewBreadCrumb.vue",
+    ),
   },
   theme,
 

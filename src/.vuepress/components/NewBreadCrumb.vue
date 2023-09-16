@@ -68,10 +68,8 @@ const getBreadCrumbConfig = (): void => {
       routeLocale.value,
   ).map<BreadCrumbConfig | null>(({link, name}) => {
     const route = routes.find((route) => route.path === link);
-    console.log(route, router)
     if (route) {
       const {meta, path} = resolveRouteWithRedirect(router, route.path);
-      console.log(meta, path)
       const title = (meta[ArticleInfoType.shortTitle] || meta[ArticleInfoType.title] || name) as string;
       const icon = meta[ArticleInfoType.icon] as string;
       const enable = meta[ArticleInfoType.order];

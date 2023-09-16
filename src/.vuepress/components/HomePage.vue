@@ -62,9 +62,10 @@
 import HopeHomePage from "vuepress-theme-hope/components/HomePage.js";
 </script>
 <style lang="scss" scoped>
+@import "vuepress-theme-hope/templates/palette/config";
 .main-title {
   padding-bottom: 30px;
-  margin-top: 90px;
+  margin-top: 66px;
   #title {
     font-size: 24px;
     font-weight: 700;
@@ -86,6 +87,7 @@ import HopeHomePage from "vuepress-theme-hope/components/HomePage.js";
   width: 160px;
   border-radius: 10px;
   line-height: 36px;
+  height: 36px;
   color: #ffffff;
   text-align: center;
   cursor: pointer;
@@ -103,13 +105,10 @@ import HopeHomePage from "vuepress-theme-hope/components/HomePage.js";
 .top-background>div {
   display: flex;
   justify-content: center;
-
 }
 .video {
   margin-left: 50px;
   margin-top: 60px;
-  border-radius: 10px;
-  overflow: hidden;
   iframe {
     width: 500px;
     height: 300px;
@@ -151,7 +150,7 @@ html[data-theme=dark] {
 html {
   .top-background {
     background: linear-gradient(135deg, #ffffff, #ece9e6);
-    height: 460px;
+    padding: 20px;
     #title {
       color: #172b4d;
     }
@@ -171,4 +170,45 @@ html {
     background: #ffffff;
   }
 }
+@media (max-width: $pad) {
+  .top-background > div {
+    display: grid;
+  }
+
+  .top-background > div > div {
+    display: flex;
+    align-items: end;
+    gap: 30px;
+    .main-title {
+      padding-bottom: 0;
+    }
+    .btn-group {
+      padding-bottom: 30px;
+    }
+  }
+
+  .video {
+    iframe {
+      width: 88%;
+    }
+  }
+
+  .main-image {
+    width: 100%;
+  }
+}
+@media (max-width: $mobile) {
+  .top-background > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .video {
+    margin-left: 0;
+    iframe {
+      width: 400px;
+    }
+  }
+}
+
 </style>

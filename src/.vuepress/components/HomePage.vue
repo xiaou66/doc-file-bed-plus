@@ -177,7 +177,7 @@ html {
 
   .top-background > div > div {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     gap: 30px;
     .main-title {
       padding-bottom: 0;
